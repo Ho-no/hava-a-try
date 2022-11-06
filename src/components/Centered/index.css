@@ -1,0 +1,55 @@
+.container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.centered {
+    height: 15px;
+    width: 15px;
+    background-color: whitesmoke;
+}
+
+.one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* 这一堆零是干啥的 */
+    margin: auto;
+}
+
+.two {
+    align-self: center;
+}
+.twoblock {
+    display: flex;
+    justify-content: center;
+}
+
+.three {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    /* 为啥绝对定位就可以了 */
+    left: 50%;
+    top: 50%;
+}
+
+.four {
+    display: inline-block;
+}
+.fourblock {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}

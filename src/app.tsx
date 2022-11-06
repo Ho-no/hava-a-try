@@ -1,9 +1,11 @@
-import React from "react"
+import React from 'react'
+import Centered from './components/Centered'
 
 const App: React.FC<{}> = () => {
   return (
     <>
-      <span> hello, world! </span>
+      <div>Hello, Centered!</div>
+      <Centered />
     </>
   )
 }
